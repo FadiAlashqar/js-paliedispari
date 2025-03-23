@@ -3,7 +3,7 @@
 
 // Inizializziamo le varibile che conterrano i valori inseriti dall'utente:
 let EvenOdd = prompt('Scegli tra pari e dispari')
-let userNum = prompt('Scegli un numero da 1 - 5')
+let userNum = parseInt(prompt('Scegli un numero da 1 - 5'))
 
 // Definisco la funzione per generare il numero del computer:
 function randomNumbers(min, max) {
@@ -12,7 +12,12 @@ function randomNumbers(min, max) {
 
 randomNumbers(1, 5)
 let Num = randomNumbers(1, 5)
+let sum = Num + userNum
 
+console.log(`Hai scelto: ${EvenOdd}`)
+console.log(`Numero user: ${userNum}`)
+console.log(`Numero computer: ${Num}`)
+console.log (`La somma è: ${sum}`)
 
 // Definisco la funzione per stabilere il vincitore:
 function DeclareWinner(Random, User) {
@@ -24,4 +29,7 @@ function DeclareWinner(Random, User) {
         console.log('Ha vinto Dispari')
     )
 }
+DeclareWinner(Num, userNum)
+
+
 
