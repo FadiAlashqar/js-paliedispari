@@ -18,3 +18,4 @@ let reversedWord = userWord.split("").reverse().join("");
 //chiamo la funzione:
 enterWord(userWord, reversedWord);
 
+console.log(`La parola scelta è: ${userWord}`)
