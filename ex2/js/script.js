@@ -12,3 +12,16 @@ function randomNumbers(min, max) {
 
 randomNumbers(1, 5)
 let Num = randomNumbers(1, 5)
+
+
+// Definisco la funzione per stabilere il vincitore:
+function DeclareWinner(Random, User) {
+    
+    if ((Random + User) % 2 === 0) {
+        console.log('Ha vinto Pari')
+    }
+    else(
+        console.log('Ha vinto Dispari')
+    )
+}
+
